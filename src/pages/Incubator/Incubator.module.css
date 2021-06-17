@@ -1,0 +1,28 @@
+.incubatorContainer {
+  width: 100%;
+  /* border: 1px solid red; */
+}
+
+.incubatorOverview {
+  width: 100%;
+  border: 1px solid red;
+  padding: 3em 4em;
+}
+
+@media screen and (max-width: 768px) {
+  .incubatorOverview {
+    padding: 3em 4em;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .incubatorOverview {
+    padding: 3em 2em;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .incubatorOverview {
+    padding: 3em 1em;
+  }
+}

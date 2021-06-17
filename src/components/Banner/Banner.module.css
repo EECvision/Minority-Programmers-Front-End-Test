@@ -1,0 +1,62 @@
+.bannerContainer {
+  width: 100%;
+  height: 16em;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 8em;
+}
+
+.textContainer {
+  width: 50%;
+  /* max-width: 24em; */
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.text {
+  width: 100%;
+  font-size: calc(1.5rem + 2vmax);
+  margin-bottom: 0.5em;
+  border: 1px solid red;
+}
+
+.button {
+  border: 1px solid red;
+  padding: 0.5em 1.5em;
+}
+
+@media screen and (max-width: 768px) {
+  .bannerContainer {
+    padding: 4em;
+    justify-content: center;
+  }
+  .textContainer {
+    width: 100%;
+  }
+  .text {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .bannerContainer{
+    padding: 2em;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .bannerContainer{
+    padding: 1em;
+  }
+  .text{
+    font-size: 1.6em;
+  }
+}

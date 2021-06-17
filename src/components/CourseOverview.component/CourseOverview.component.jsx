@@ -7,7 +7,7 @@ import { selectCourses } from '../../redux/learn/learn.selectors';
 const CourseOverview = ({courses}) => {
   return (
     <div className={styles.courseOverviewContainer}>
-      View all courses
+      view all courses
     </div>
   )
 }

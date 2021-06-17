@@ -1,0 +1,53 @@
+.startupContainer {
+  width: 100%;
+  border: 1px solid red;
+  margin: 2em 0;
+}
+
+.caption {
+  position: relative;
+  width: 100%;
+  padding: 1em 0;
+  margin-right: 6em;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.boldCaption {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.lightCaption {
+  font-weight: 500;
+  /* font-size: 1rem; */
+}
+
+.startupMenu {
+  /* border: 1px solid red; */
+  display: block;
+  white-space: nowrap;
+  overflow-x: auto;
+  border: 1px solid red;
+}
+
+.startupMenu::-webkit-scrollbar{
+  display: none;
+}
+
+.arrowContainer {
+  right: 0;
+  position: absolute;
+}
+
+.arrowLeft,
+.arrowRight {
+  border: 1px solid rgb(196, 196, 196);
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.arrowRight {
+  margin-left: 3em;
+}

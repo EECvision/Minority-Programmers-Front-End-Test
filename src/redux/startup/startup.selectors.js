@@ -7,3 +7,12 @@ export const selectStartups = createSelector(
   startup => startup.startups
 );
 
+export const selectStartupsForDisplay = createSelector(
+  [selectStartups],
+  startups => Object.keys(startups).map(key => startups[key])
+);
+
+export const selectStartupDetails = startupParam => createSelector(
+  [selectStartups],
+  startups => startups[startupParam]
+);

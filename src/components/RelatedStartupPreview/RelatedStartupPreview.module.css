@@ -1,0 +1,77 @@
+.startupPreviewContainer {
+  border: 1px solid rgb(192, 191, 191);
+  width: 18em;
+  margin-right: 1em;
+  display: inline-block;
+  white-space: normal;
+  border-radius: 0.7em;
+  padding: 1rem;
+}
+
+.iconContainer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 1em;
+}
+
+.icon {
+  width: 3em;
+  height: auto;
+  margin-right: 1em;
+}
+
+.name {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.description {
+  margin-bottom: 1em;
+  width: 100%;
+  font-size: 1.1em;
+  /* font-weight: 500; */
+}
+
+.fundText {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.fund {
+  width: 100%;
+  text-align: left;
+  font-weight: bold;
+  margin: 0.5em 0;
+  font-size: 1.2rem;
+}
+
+.meter {
+  margin-bottom: 1em;
+}
+
+.buttonContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.buttonFund {
+  padding: 1em;
+  background: #151371;
+  color: white;
+  border-radius: 0.2em;
+}
+
+.buttonLearn {
+  padding: 1em;
+  color: #151371;
+  background: white;
+  border: 2px solid #151371;
+  border-radius: 0.2em;
+}

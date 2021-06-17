@@ -1,0 +1,11 @@
+.bannerContainer {
+  width: 100%;
+  border: 1px solid red;
+  height: 20em;
+  background: blue;
+}
+
+.bannerIcon {
+  width: 35%;
+  height: auto;
+}

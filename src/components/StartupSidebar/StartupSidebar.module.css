@@ -1,0 +1,97 @@
+.sidebarContainer {
+  width: 25%;
+  border: 1px solid red;
+  margin-right: 1em;
+}
+
+.foundDate {
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.websiteContainer,
+.teamsizeContainer,
+.locationContainer,
+.teamsContainer,
+.tagsContainer {
+  border: 1px solid red;
+  margin-bottom: 1em;
+}
+
+.websiteContainer > .title,
+.locationContainer > .title,
+.teamsizeContainer > .title {
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.locationContainer .value,
+.teamsizeContainer .value {
+  font-weight: bold;
+}
+
+.websites a:first-child {
+  color: #151371;
+  font-weight: bold;
+}
+
+.link {
+  display: inline-block;
+  border: 1px solid red;
+  padding: 0 0.4em;
+  margin-left: 0.5em;
+}
+
+.teamsContainer .title,
+.tagsContainer > .title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 1em;
+}
+
+.teams {
+  border: 1px solid red;
+
+}
+
+.team {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 0.5em;
+}
+
+.team > .avatar {
+  width: 2.5em;
+  height: 2.5em;
+  background: gray;
+  border-radius: 50%;
+  margin-right: 0.5em;
+}
+
+.team > .info > .name {
+  font-weight: bold;
+}
+
+.team > .info > .role {
+  font-weight: bold;
+  font-size: 0.8rem;
+}
+
+.tags {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.tag {
+  border: 1px solid rgb(192, 191, 191);
+  border-radius: 0.2em;
+  margin-right: 0.5em;
+  padding: 0 0.5em;
+  font-weight: 500;
+  font-size: 0.8rem;
+}
+
+

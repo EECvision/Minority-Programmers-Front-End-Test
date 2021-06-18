@@ -1,19 +1,19 @@
 import React from 'react';
-import { connect } from 'react-redux';
-import { createStructuredSelector } from 'reselect';
-import { selectWeeks } from '../../redux/learn/learn.selectors';
+import WeekPreview from '../WeekPreview/WeekPreview.component';
 import styles from './ModuleOverview.module.css';
 
-const ModuleOverview = ({weeks}) => {
+const ModuleOverview = ({module}) => {
+  const moduleToArray = Object.keys(module).map(key => module[key]);
+
   return (
     <div className={styles.moduleOverviewContainer}>
-      View all Weeks
+      {
+        moduleToArray.map(week => (
+          <WeekPreview key={week.weekId} {...week}/>
+        ))
+      }
     </div>
   )
 }
 
-const mapStateToProps = createStructuredSelector({
-  weeks: selectWeeks
-})
-
-export default connect(mapStateToProps)(ModuleOverview);
+export default ModuleOverview;

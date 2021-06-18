@@ -2,7 +2,7 @@ import styles from './StartupMain.module.css';
 
 const StartupMain = ({details: {about, vision}}) => {
   return (
-    <main className={styles.statementContainer}>
+    <main className={styles.mainContainer}>
       <section className={styles.aboutContainer}>
         <div className={styles.title}>About</div>
         <div className={styles.text}>{about}</div>

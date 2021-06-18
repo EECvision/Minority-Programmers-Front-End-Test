@@ -20,7 +20,7 @@ const UpcomingStartup = ({ startups }) => {
             ))
         }
       </div>
-      <div onClick={()=>setLoadMore(!loadMore)} className={styles.button}>Load {loadMore ? "more" : "less"}</div>
+      <div onClick={()=>setLoadMore(!loadMore)} className={styles.loadButton}>Load {loadMore ? "more" : "less"}</div>
     </div>
   )
 }

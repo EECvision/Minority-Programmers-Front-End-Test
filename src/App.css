@@ -10,9 +10,15 @@
 *::before,
 *::after{
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 a {
   text-decoration: none;
   color: black;
+}
+
+meter::-webkit-meter-optimum-value {
+  background-image: linear-gradient(to left, rgb(255, 0, 184, 0.9), rgb(255, 199, 0, 0.5));
+  height: 50px;
 }

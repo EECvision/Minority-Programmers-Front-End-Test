@@ -1,11 +1,11 @@
 import styles from './StartupHeader.module.css';
 
-const StartupHeader = ({ details: { icon, name, fundRaised, totalFund } }) => {
+const StartupHeader = ({ details: { icon, name, fundRaised, totalFund, history } }) => {
   const getPercentageFund = () => ((parseInt(fundRaised) / parseInt(totalFund)) * 100);
   return (
     <header className={styles.header}>
       <div className={styles.iconContainer}>
-        <div className={styles.arrowLeft}><i style={{ padding: '0.8em' }} className="fas fa-arrow-left"></i></div>
+        <div onClick={()=> history.goBack()} className={styles.arrowLeft}><i style={{ padding: '0.8em' }} className="fas fa-arrow-left"></i></div>
         <img className={styles.icon} src={icon} alt="startup-icon" />
         <div className={styles.name}>{name}</div>
       </div>

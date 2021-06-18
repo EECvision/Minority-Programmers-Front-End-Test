@@ -1,0 +1,39 @@
+.dashboardContainer {
+  width: 100%;
+  padding: 64px;
+  background-image: linear-gradient(to right, rgb(255, 0, 184, 0.9), rgb(255, 199, 0, 0.8));
+  color: white;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 48px;
+}
+
+.progressText {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.statusContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.status {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.meter {
+  width: 100%;
+}
+
+.progress {
+  font-size: 2rem;
+  font-weight: 500;
+}

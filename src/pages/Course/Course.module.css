@@ -1,0 +1,50 @@
+.courseContainer {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-top: 6em;
+  background: #151371;
+}
+
+.wrapper {
+  width: 70%;
+  margin-left: 30%;
+}
+
+.actionContainer{
+  padding: 4em;
+}
+
+.actionBar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 3em;
+  color: white;
+}
+
+.action {
+  font-weight: bold;
+  font-size: 2rem;
+  margin-right: 3em;
+  cursor: pointer;
+}
+
+.calendarContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 4em;
+  font-weight: 500;
+  color: white;
+}
+
+.messageContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 4em;
+  font-weight: 500;
+  color: white;
+}

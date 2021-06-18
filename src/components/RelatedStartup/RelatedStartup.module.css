@@ -1,7 +1,8 @@
 .startupContainer {
   width: 100%;
-  border: 1px solid red;
   margin: 2em 0;
+  background: white;
+  padding: 1em 2.5em;
 }
 
 .caption {
@@ -21,15 +22,12 @@
 
 .lightCaption {
   font-weight: 500;
-  /* font-size: 1rem; */
 }
 
 .startupMenu {
-  /* border: 1px solid red; */
   display: block;
   white-space: nowrap;
   overflow-x: auto;
-  border: 1px solid red;
 }
 
 .startupMenu::-webkit-scrollbar{
@@ -46,6 +44,7 @@
   border: 1px solid rgb(196, 196, 196);
   border-radius: 50%;
   display: inline-block;
+  cursor: pointer;
 }
 
 .arrowRight {

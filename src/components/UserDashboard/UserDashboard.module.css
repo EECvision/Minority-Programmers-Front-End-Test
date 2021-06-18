@@ -1,0 +1,46 @@
+.dashboardContainer {
+  border: 1px solid red;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4em 6em;
+  background-image: linear-gradient(to right, rgb(255, 0, 184, 0.9), rgb(255, 199, 0, 0.8));
+  color: white;
+}
+
+.imageContainer {
+  width: 14em;
+  height: 14em;
+  border-radius: 50%;
+  display: none;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+/* .infoContainer {
+} */
+
+.name {
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+.progress {
+  margin: 24px 0;
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.resumeButtonContainer {
+  width: 100%;
+  text-align: center;
+}
+
+.resumeButton {
+  display: inline-block;
+  padding: 1em 5em;
+  border-radius: 1em;
+  font-weight: 500;
+  background: #151371;
+  font-size: 1.1em;
+}

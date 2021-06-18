@@ -2,12 +2,12 @@ import styles from './StartupPreview.module.css';
 import icon from '../../assets/startup-icon.svg';
 import { Link, useRouteMatch } from 'react-router-dom';
 
-const StartupPreview = ({startup}) => {
+const StartupPreview = ({startup, margin}) => {
   const match = useRouteMatch();
   const {name, description, fundRaised, totalFund, url} = startup;
   const getPercentageFund=()=> ((parseInt(fundRaised)/parseInt(totalFund))*100);
   return (
-    <Link to={`${match.path}/${url}`} className={styles.StartupPreviewContainer}>
+    <Link to={`${match.path}/${url}`} style={{marginRight: margin ? '1em' : '0'}} className={styles.StartupPreviewContainer}>
       <div className={styles.iconContainer}>
         <img className={styles.icon} src={icon} alt="startup-icon"/>
         <div className={styles.name}>{name}</div>
@@ -17,7 +17,7 @@ const StartupPreview = ({startup}) => {
       </div>
       <div className={styles.fundText}>
         <div>Fund raise</div>
-        <div>{getPercentageFund()}&#x25;</div>
+        <div className={styles.percentage}>{getPercentageFund()}&#x25; complete</div>
       </div>
       <div className={styles.fund}>&#x24;{fundRaised}/&#x24;{totalFund}</div>
       <div className={styles.meter}>

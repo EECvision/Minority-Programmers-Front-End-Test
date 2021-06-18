@@ -1,18 +1,20 @@
 .navbarContainer {
+  position: fixed;
+  top: 0;
   width: 100%;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0 8em;
-  background: rgb(184, 184, 184);
+  background: white;
+  z-index: 5;
 }
 
 .logoContainer {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid black;
   width: 6rem;
   height: 6rem
 }
@@ -22,13 +24,48 @@
   height: 100%;
 }
 
-.links {
-  border: 1px solid red;
+.linksMobile {
+  width: 100%;
+  position: absolute;
+  /* border: 1px solid blue; */
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgb(255, 255, 255, 0.8);
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
 }
+
+.linkMobile {
+  display: block;
+  font-size: 2rem;
+  font-weight: bold;
+  /* border: 1px solid red; */
+  padding: 0.3em 0;
+  margin-bottom: 1em;
+  color: #151371;
+}
+
+/* .links {
+  border: 1px solid red;
+} */
 
 .link {
   /* border: 1px solid red; */
   margin-right: 2em;
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: #151371;
+}
+
+.linkMobile:hover,
+.link:hover {
+  border-bottom: 3px solid #FF00B8;
+}
+
+.link:active {
+  border-bottom: 3px solid #151371;
 }
 
 .link:last-child{
@@ -37,6 +74,13 @@
 
 .bars {
   display: none;
+  font-size: 2em;
+  cursor: pointer;
+  color: #151371;
+}
+
+.bars > i {
+  font-weight: lighter;
 }
 
 @media screen and (max-width: 768px){
@@ -49,16 +93,21 @@
   .navbarContainer{
     padding: 0 2em;
   }
-}
-
-@media screen and (max-width: 425px) {
-  .navbarContainer{
-    padding: 0 1em;
+  .linksMobile {
+    display: flex;
+    left: 0;
+    top: 6em;
   }
   .links {
     display: none;
   }
   .bars {
     display: block;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .navbarContainer{
+    padding: 0 1em;
   }
 }

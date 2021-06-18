@@ -2,27 +2,26 @@
   min-height: 100vh;
   width: 100%;
   max-width: 1440px;
-  border: 1px solid red;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
   padding: 1em;
+  margin-top: 6em;
+  background-image: linear-gradient(to right, rgb(255, 0, 184, 0.9), rgb(255, 199, 0, 0.5));
 }
 
 .name {
   width: 100%;
   font-size: calc(2rem + 4vmax);
   font-weight: bold;
-  border: 1px solid red;
   text-align: center;
-  margin-bottom: 1em;
   font-family: 'Quantico', sans-serif;
+  color: white;
 }
 
 .tiles {
   width: 100%;
-  /* border: 1px solid red; */
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -30,12 +29,16 @@
 
 .tileA,
 .tileB {
-  border: 1px solid red;
   width: 40%;
-  height: 14em;
+  height: 8em;
   display: flex;
   align-items: center;
   justify-content: center;
+  border-radius: 0.5em;
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  background: rgb(21, 19, 113, 0.8); 
 }
 
 @media screen and (max-width: 768px) {
@@ -45,13 +48,12 @@
 
   .tileA,
   .tileB {
-    border: 1px solid red;
     width: 100%;
-    height: 8em;
+    height: 6em;
   }
 
   .tileA {
-    margin-bottom: 2em;
+    margin-bottom: 1em;
   }
 }
 

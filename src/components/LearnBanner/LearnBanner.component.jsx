@@ -5,7 +5,11 @@ const LearnBanner = () => {
 
   return(
     <div className={styles.bannerContainer}>
-      <img className={styles.bannerIcon} src={img} alt="bannerIcon" />
+      <img className={styles.icon} src={img} alt="icon" />
+      <div className={styles.textContainer}>
+        <div className={styles.mainText}>Learn high in demand <br /> IT Skills &#x26; Get Crypto</div>
+        <div className={styles.subText}>powered by KoinStreet</div>
+      </div>
     </div>
   )
 }

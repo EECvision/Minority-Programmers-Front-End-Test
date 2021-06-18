@@ -11,9 +11,7 @@
 }
 
 .textContainer {
-  width: 50%;
-  /* max-width: 24em; */
-  border: 1px solid red;
+  width: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -25,12 +23,12 @@
   width: 100%;
   font-size: calc(1.5rem + 2vmax);
   margin-bottom: 0.5em;
-  border: 1px solid red;
 }
 
 .button {
-  border: 1px solid red;
-  padding: 0.5em 1.5em;
+  padding: 0.7em 2em;
+  border-radius: 0.3em;
+  background-image: linear-gradient(to right, rgb(255, 0, 184, 0.9), rgb(255, 199, 0, 0.8));
 }
 
 @media screen and (max-width: 768px) {

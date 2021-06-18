@@ -1,11 +1,11 @@
 .incubatorContainer {
   width: 100%;
-  /* border: 1px solid red; */
+  margin-top: 6em;
+  background-image: linear-gradient(to right, rgb(255, 0, 184, 0.9), rgb(255, 199, 0, 0.5));
 }
 
 .incubatorOverview {
   width: 100%;
-  border: 1px solid red;
   padding: 3em 4em;
 }
 

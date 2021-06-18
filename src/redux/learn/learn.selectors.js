@@ -7,17 +7,27 @@ export const selectCourses = createSelector(
   learn => learn.courses
 )
 
-export const selectWeeks = createSelector(
+export const selectCoursesForView = createSelector(
   [selectCourses],
-  courses => null
-)
+  courses => Object.keys(courses).map(key => courses[key])
+);
+
+export const selectCourse = courseParam => createSelector(
+  [selectCourses],
+  courses => courses[courseParam]
+);
+
+export const selectWeek = ({courseId, weekId}) => createSelector(
+  [selectCourses],
+  courses => courses[courseId].module[weekId]
+);
 
 export const selectActivities = createSelector(
-  [selectWeeks],
-  weeks => null
+  // [selectWeeks],
+  // weeks => null
 )
 
 export const selectLessons = createSelector(
-  [selectActivities],
-  activities => null
+  // [selectActivities],
+  // activities => null
 )

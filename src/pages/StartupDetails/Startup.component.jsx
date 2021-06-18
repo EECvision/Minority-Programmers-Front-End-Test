@@ -7,8 +7,10 @@ import RelatedStartup from '../../components/RelatedStartup/RelatedStartup.compo
 import StartupHeader from '../../components/StartupHeader/StartupHeader.component';
 import StartupSidebar from '../../components/StartupSidebar/StartupSidebar.component';
 import StartupMain from '../../components/StartupMain/StartupMain.component';
+import { useHistory } from "react-router-dom"
 
 const Startup = ({ startupDetail, startups }) => {
+  const history = useHistory();
   const {
     name, fundRaised, totalFund, dateFounded, location, 
     teams, website, teamsize, tags, about, vision,
@@ -16,7 +18,7 @@ const Startup = ({ startupDetail, startups }) => {
 
   return (
     <div className={styles.startupContainer}>
-      <StartupHeader details={{icon, name, fundRaised, totalFund}}/>
+      <StartupHeader details={{icon, name, fundRaised, totalFund, history}}/>
       
       <div className={styles.wrapper}>
         <StartupSidebar details={{dateFounded, website, location, teams, teamsize, tags}}/>

@@ -1,15 +1,14 @@
 .startupContainer {
   position: relative;
-  /* border: 1px solid red; */
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: flex-start
 }
 
 .caption {
   width: auto;
-  /* border: 1px solid red; */
   margin-right: 6em;
+  color: white;
 }
 
 .boldCaption {
@@ -19,11 +18,10 @@
 
 .lightCaption {
   font-weight: 500;
-  /* font-size: 1rem; */
 }
 
 .startupMenu {
-  /* border: 1px solid red; */
+  width: 100%;
   display: block;
   white-space: nowrap;
   overflow-x: auto;
@@ -33,20 +31,53 @@
   display: none;
 }
 
-.arrowLeft {
-  border: 1px solid rgb(196, 196, 196);
+.arrowRight {
   position: absolute;
-  left: 12rem;
-  top: 50%;
-  /* padding: 1em; */
-  border-radius: 50%;
+  right: -3.5rem;
 }
 
-.arrowRight {
-  border: 1px solid rgb(196, 196, 196);
+.arrowLeft {
   position: absolute;
-  right: -4rem;
-  top: 50%;
-  /* padding: 1em; */
+  left: 12rem;
+}
+
+.arrowLeft > i{
+  padding: 1em;
   border-radius: 50%;
+  background: rgb(255, 255, 255, 0.3);
+  color: white;
+  cursor: pointer;
+}
+
+.arrowRight > i{
+  padding: 1em;
+  border-radius: 50%;
+  background: rgb(255, 255, 255, 0.3);
+  color: white;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .startupContainer {
+    flex-direction: column;
+  }
+  
+  .arrowLeft {
+    right: 4em;
+    left: 0;
+    top: 8em;
+    display: flex;
+    justify-content: flex-end;  
+  }
+
+  .arrowRight {
+    top: 8em;
+    right: 0;
+  }
+
+  .caption {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 2em;
+  }
 }

@@ -1,0 +1,38 @@
+.learnContainer {
+  width: 100%;
+  background: #151371;
+  margin-top: 6em;
+  padding-bottom: 2em;
+}
+
+.loadButtonContainer {
+  width: 100%;
+  text-align: center;
+}
+
+.loadButton {
+  display: inline-block;
+  border: 2px solid white;
+  padding: 0.5em 3em;
+  border-radius: 0.2em;
+  cursor: pointer;
+  font-weight: bold;
+  color: white;
+}
+
+.courseOverview {
+  margin-top: 8em;
+  padding-left: 6em;
+}
+
+@media screen and (max-width: 768px) {
+  .courseOverview {
+    padding-left: 3rem;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .courseOverview {
+    padding-left: 1rem;
+  }
+}

@@ -1,0 +1,23 @@
+.weekContainer {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-top: 6.5em;
+  background: #151371;
+}
+
+.wrapper {
+  width: 70%;
+  margin-left: 30%;
+}
+
+.arrowContainer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2em;
+  margin: 1em 0;
+  color: white;
+}

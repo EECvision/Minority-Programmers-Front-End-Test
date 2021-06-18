@@ -1,11 +1,61 @@
 .bannerContainer {
+  position: relative;
   width: 100%;
-  border: 1px solid red;
-  height: 20em;
-  background: blue;
+  background-image: linear-gradient(to right, rgb(255, 0, 184, 0.9), rgb(255, 199, 0, 0.8));
+  overflow: hidden;
 }
 
-.bannerIcon {
-  width: 35%;
+.icon {
+  width: 44em;
   height: auto;
+  position: absolute;
+  margin-top: -4em;
+  margin-left: -4em;
+  z-index: 0;
+}
+
+.mainText {
+  font-size: calc(2rem + 1.5vmax);
+  color: white;
+  font-weight: bold;
+  text-align: right;
+}
+
+.subText {
+  text-align: right;
+  font-size: calc(1rem + 1.5vmax);
+  font-style: italic;
+  color: white;
+}
+
+.textContainer {
+  width: 100%;
+  padding: 8em 6em;
+  z-index: 1;
+  position: relative;
+}
+
+@media screen and (max-width: 768px) {
+  .bannerContainer {
+    justify-content: center;
+  }
+  .textContainer {
+    padding: 8em 3em;
+  }
+  .icon {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .textContainer {
+    padding: 4em 1em;
+  }
+  .mainText {
+    text-align: center;
+  }
+  
+  .subText {
+    text-align: center;
+  }
 }

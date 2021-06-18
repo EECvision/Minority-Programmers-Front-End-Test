@@ -1,9 +1,16 @@
 import React from 'react';
+import ActivityPreview from '../ActivityPreview/ActivityPreview.component';
+import styles from './ActivityOverview.module.css';
 
-const ActivityOverview = () => {
+const ActivityOverview = ({activity}) => {
+  const activityToArray = Object.keys(activity).map(key => activity[key]);
   return (
-    <div>
-      view all Activities
+    <div className={styles.activityOverviewContainer}>
+      {
+        activityToArray.map(activity => (
+          <ActivityPreview key={activity.activityId} {...activity}/>
+        ))
+      }
     </div>
   )
 }

@@ -1,12 +1,12 @@
 .StartupPreviewContainer {
-  border: 1px solid rgb(192, 191, 191);
+  /* border: 1px solid rgb(192, 191, 191); */
   width: 18em;
-  margin-right: 1em;
+  /* margin-right: 1em; */
   display: inline-block;
   white-space: normal;
   border-radius: 0.7em;
   padding: 1rem;
-  /* border: 1px solid red; */
+  background: white;
 }
 
 .iconContainer {
@@ -31,7 +31,7 @@
 .description {
   margin-bottom: 1em;
   width: 100%;
-  font-size: 1.1em;
+  font-size: 1em;
   /* font-weight: 500; */
 }
 
@@ -42,6 +42,10 @@
   justify-content: space-between;
   font-size: 1.2rem;
   font-weight: 500;
+}
+
+.percentage {
+  font-size: 0.9rem;
 }
 
 .fund {

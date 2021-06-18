@@ -1,0 +1,51 @@
+.myCoursesContainer {
+  margin: 1em 0;
+  width: 100%;
+}
+
+.caption {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  margin-bottom: 2em;
+  padding-right: 8em;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.line {
+  flex: auto;
+  height: 4px;
+  background: white;
+  margin: 0 2em;
+}
+
+.arrowContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.arrowLeft > i,
+.arrowRight > i {
+  font-weight: lighter;
+  cursor: pointer;
+  padding: 0.5em;
+}
+
+
+.courseMenu {
+  width: 100%;
+  display: block;
+  white-space: nowrap;
+  overflow-x: auto;
+}
+
+.courseMenu::-webkit-scrollbar {
+  display: none;
+}

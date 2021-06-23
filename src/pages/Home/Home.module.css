@@ -7,7 +7,7 @@
   align-items: center;
   justify-content: flex-start;
   padding: 1em;
-  margin-top: 6em;
+  margin-top: calc(2em + 3vmax);
   background-image: linear-gradient(to right, rgb(255, 0, 184, 0.9), rgb(255, 199, 0, 0.5));
 }
 

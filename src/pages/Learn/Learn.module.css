@@ -1,7 +1,7 @@
 .learnContainer {
   width: 100%;
   background: #151371;
-  margin-top: 6em;
+  margin-top: calc(2em + 3vmax);
   padding-bottom: 2em;
 }
 

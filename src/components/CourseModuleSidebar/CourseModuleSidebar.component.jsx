@@ -1,12 +1,12 @@
 import styles from './CourseModuleSidebar.module.css';
 import { Link, useRouteMatch } from 'react-router-dom';
 
-const CourseModuleSidebar = ({ courseTitle, module }) => {
+const CourseModuleSidebar = ({ courseTitle, module, show }) => {
   const moduleToArray = Object.keys(module).map(key => module[key]);
   const match = useRouteMatch();
   return (
-    <div className={styles.moduleSidebarContainer}>
-      <div className={styles.previous}>course</div>
+    <div style={{display: show ? "block" : "none"}} className={styles.moduleSidebarContainer}>
+      <Link to="/learn"><div className={styles.previous}> <i className="fas fa-angle-left"></i> Course</div></Link>
       <div className={styles.courseTitle}>{courseTitle}</div>
       {
         moduleToArray.map(week => (

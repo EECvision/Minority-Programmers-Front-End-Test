@@ -3,13 +3,13 @@
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
-  margin-top: 6em;
+  margin-top: calc(2em + 3vmax);
   background: #151371;
 }
 
 .wrapper {
-  width: 70%;
-  margin-left: 30%;
+  width: calc(100% - 24em);
+  margin-left: 24em;
 }
 
 .actionContainer{
@@ -22,13 +22,18 @@
   justify-content: flex-start;
   margin-bottom: 3em;
   color: white;
+  flex-wrap: wrap;
 }
 
 .action {
   font-weight: bold;
-  font-size: 2rem;
+  font-size: calc(0.3rem + 2vmax);
   margin-right: 3em;
   cursor: pointer;
+}
+
+.action:last-child {
+  margin-right: 0;
 }
 
 .calendarContainer {
@@ -48,3 +53,53 @@
   font-weight: 500;
   color: white;
 }
+
+.showNav {
+  position: fixed;
+  top: 4em;
+  display: none;
+  border: 1px solid #151371;
+  padding:  0.3em;
+  border-radius: 0.3em;
+  z-index: 5;
+}
+
+.showNav i {
+  font-size: 1.5rem;
+  color: #151371;
+}
+
+@media screen and (max-width: 996px) {
+  .wrapper {
+    width: 100%;
+    margin-left: 0;
+  }
+  .showNav {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .actionContainer {
+    padding: 3em;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .actionContainer {
+    padding: 2em;
+  }
+  .actionBar {
+    justify-content: space-between;
+  }
+  .action {
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .actionContainer {
+    padding: 1em;
+  }
+}
+

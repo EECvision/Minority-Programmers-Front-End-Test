@@ -8,6 +8,7 @@ import StartupHeader from '../../components/StartupHeader/StartupHeader.componen
 import StartupSidebar from '../../components/StartupSidebar/StartupSidebar.component';
 import StartupMain from '../../components/StartupMain/StartupMain.component';
 import { useHistory } from "react-router-dom"
+// import StartupSidebarMobile from '../../components/StartupSidebarMobile/StartupSidebarMobile.component';
 
 const Startup = ({ startupDetail, startups }) => {
   const history = useHistory();
@@ -22,12 +23,10 @@ const Startup = ({ startupDetail, startups }) => {
       
       <div className={styles.wrapper}>
         <StartupSidebar details={{dateFounded, website, location, teams, teamsize, tags}}/>
-        
         <div className={styles.RHS}>
           <StartupMain details={{about, vision}}/>
           <RelatedStartup startups={startups}/>
         </div>
-
       </div>
     </div>
   )

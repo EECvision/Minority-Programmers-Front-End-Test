@@ -1,19 +1,27 @@
+.wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-image: linear-gradient(to right, rgb(255, 0, 184, 0.9), rgb(255, 199, 0, 0.8));
+}
+
 .dashboardContainer {
   width: 100%;
-  padding: 64px;
-  background-image: linear-gradient(to right, rgb(255, 0, 184, 0.9), rgb(255, 199, 0, 0.8));
+  max-width: 1024px;
+  padding: 4em;
   color: white;
 }
 
 .title {
-  font-size: 3rem;
+  font-size: calc(1rem + 2vmax);
   font-weight: bold;
   margin-bottom: 48px;
 }
 
 .progressText {
-  font-size: 2rem;
-  font-weight: bold;
+  font-size: calc(0.8rem + 2vmax);
+  font-weight: 500;
 }
 
 .statusContainer {
@@ -24,16 +32,23 @@
   justify-content: center;
 }
 
-.status {
-  font-size: 2rem;
-  font-weight: 500;
+.status, .progress {
+  font-size: calc(0.8rem + 1vmax);
 }
 
 .meter {
   width: 100%;
 }
 
-.progress {
-  font-size: 2rem;
-  font-weight: 500;
+@media screen and (max-width: 768px) {
+  .dashboardContainer {
+    padding: 2em;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .dashboardContainer {
+    border: 1px solid red;
+    padding: 1em;
+  }
 }

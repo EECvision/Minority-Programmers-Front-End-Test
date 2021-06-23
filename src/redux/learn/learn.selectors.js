@@ -22,12 +22,7 @@ export const selectWeek = ({courseId, weekId}) => createSelector(
   courses => courses[courseId].module[weekId]
 );
 
-export const selectActivities = createSelector(
-  // [selectWeeks],
-  // weeks => null
-)
-
-export const selectLessons = createSelector(
-  // [selectActivities],
-  // activities => null
-)
+export const selectActivity = ({courseId, weekId, activityId}) => createSelector(
+  [selectCourses],
+  courses => courses[courseId].module[weekId].activity[activityId]
+);

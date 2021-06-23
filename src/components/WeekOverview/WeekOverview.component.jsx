@@ -1,19 +1,25 @@
 import React from 'react';
-import { connect } from 'react-redux';
-import { createStructuredSelector } from 'reselect';
-import { selectActivities } from '../../redux/learn/learn.selectors';
-import styles from './WeekOverview.module.css';
+import './WeekOverview.css';
 
-const WeekOverview = ({activities}) => {
+function WeekOverview() {
   return (
-    <div className={styles.weekContainer}>
-      View all activities
+    <div className="weekContainer">
+      <div class="circular">
+        <div class="inner"></div>
+        <div class="number">100%</div>
+        <div class="circle">
+          <div class="bar left">
+            <div class="progress"></div>
+          </div>
+          <div class="bar right">
+            <div class="progress"></div>
+          </div>
+        </div>
+      </div>
     </div>
-  )
+  );
 }
 
-const mapStateToProps = createStructuredSelector({
-  activities: selectActivities
-})
 
-export default connect(mapStateToProps)(WeekOverview);
+
+export default WeekOverview;

@@ -19,23 +19,24 @@ const Navbar = ({navbar, toggleNavbar, activeLink, setActiveLink}) => {
         <img className={styles.logo} src={Logo} alt="logo" />
       </div>
       <nav className={styles.links}>
-        <Link to='/home' onClick={()=>handleClick("home")} style={{borderBottom: activeLink.home ? '4px solid #FF00B8' : 'none'}} className={styles.link}>Home</Link>
-        <Link to='/startup' onClick={()=>handleClick("incubator")} style={{borderBottom: activeLink.incubator ? '4px solid #FF00B8' : 'none'}} className={styles.link}>Incubator</Link>
-        <Link to='/learn' onClick={()=>handleClick("learn")} style={{borderBottom: activeLink.learn ? '4px solid #FF00B8' : 'none'}} className={styles.link}>Learn</Link>
+        <Link to='/home' onClick={()=>handleClick("home")} style={{borderBottom: activeLink.home ? '2px solid #FF00B8' : 'transparent'}} className={styles.link}>Home</Link>
+        <Link to='/startup' onClick={()=>handleClick("incubator")} style={{borderBottom: activeLink.incubator ? '2px solid #FF00B8' : 'transparent'}} className={styles.link}>Incubator</Link>
+        <Link to='/learn' onClick={()=>handleClick("learn")} style={{borderBottom: activeLink.learn ? '2px solid #FF00B8' : 'transparent'}} className={styles.link}>Learn</Link>
       </nav>
       <div onClick={()=>toggleNavbar(!navbar)} className={styles.bars}>
         {
           navbar ? <i className="fas fa-times"></i> : <i className="fas fa-bars"></i>
         }
       </div>
-      <nav style={{height: navbar ? 'calc(100vh - 6em)' : '0'}} className={styles.linksMobile}>
-        <Link to='/home' onClick={()=>handleClick("home")} style={{borderBottom: activeLink.home ? '4px solid #FF00B8' : 'none'}} className={styles.linkMobile}>Home</Link>
-        <Link to='/startup' onClick={()=>handleClick("incubator")} style={{borderBottom: activeLink.incubator ? '4px solid #FF00B8' : 'none'}} className={styles.linkMobile}>Incubator</Link>
-        <Link to='/learn' onClick={()=>handleClick("learn")} style={{borderBottom: activeLink.learn ? '4px solid #FF00B8' : 'none'}} className={styles.linkMobile}>Learn</Link>
+      <nav style={{height: navbar ? 'calc(100vh - calc(2em + 3vmax))' : '0'}} className={styles.linksMobile}>
+        <Link to='/home' onClick={()=>handleClick("home")} style={{borderBottom: activeLink.home ? '2px solid #FF00B8' : 'transparent'}} className={styles.linkMobile}>Home</Link>
+        <Link to='/startup' onClick={()=>handleClick("incubator")} style={{borderBottom: activeLink.incubator ? '2px solid #FF00B8' : 'transparent'}} className={styles.linkMobile}>Incubator</Link>
+        <Link to='/learn' onClick={()=>handleClick("learn")} style={{borderBottom: activeLink.learn ? '2px solid #FF00B8' : 'transparent'}} className={styles.linkMobile}>Learn</Link>
       </nav>
     </header>
   )
 }
+// margin-top: calc(1em + 3vmax);
 
 const mapStateToProps = createStructuredSelector({
   navbar: selectToggleNavbar,

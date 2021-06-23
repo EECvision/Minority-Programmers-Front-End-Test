@@ -9,6 +9,7 @@ import Incubator from './pages/Incubator/Incubator.component';
 import Home from './pages/Home/Home.component';
 import Navbar from './components/Navbar/Navbar.component';
 import './App.css';
+import WeekOverviewComponent from './components/WeekOverview/WeekOverview.component';
 
 function App(){
   return (
@@ -16,6 +17,7 @@ function App(){
       <Navbar/>
       <Switch>
         <Route exact path='/' render={()=> <Redirect to='/home'/>}/>
+        <Route exact path='/mu' component={WeekOverviewComponent}/>
         <Route exact path='/home' component={Home}/>
         <Route exact path='/startup' component={Incubator}/>
         <Route exact path='/startup/:startupId' component={Startup}/>
@@ -23,6 +25,7 @@ function App(){
         <Route exact path='/learn/:courseId' component={Course}/>
         <Route exact path='/learn/:courseId/:weekId' component={Week}/>
         <Route exact path='/learn/:courseId/:weekId/:activityId' component={Activity}/>
+        <Route path='' render={()=> <div>Not found</div> }/>
       </Switch>
     </div>
   )

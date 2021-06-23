@@ -1,3 +1,15 @@
 .activityOverviewContainer {
   padding: 0 4em;
 }
+
+@media screen and (max-width: 768px) {
+  .activityOverviewContainer {
+    padding: 0 2em;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .activityOverviewContainer {
+    padding: 0 1em;
+  }
+}

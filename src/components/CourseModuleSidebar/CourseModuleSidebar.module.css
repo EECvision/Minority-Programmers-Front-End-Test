@@ -1,19 +1,31 @@
 .moduleSidebarContainer {
-  width: 30%;
+  width: 24em;
+  padding-top: 2em;
   padding-left: 3em;
   padding-right: 2em;
-  max-height:  calc(100vh - 6.5em);
+  height:  calc(100vh - calc(2em + 3vmax));
   overflow-y: auto;
   position: fixed;
-  top: 6em;
+  top: calc(2em + 3vmax);
   color: white;
   background: #151371;
+  z-index: 5;
 }
 
 .previous {
   margin-left: -1em;
-  font-weight: bold;
   margin-bottom: 1em;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  color: white;
+}
+
+.previous  i {
+  font-size: 3.5rem;
+  font-weight: lighter;
+  margin-right: 12px;
 }
 
 .courseTitle {
@@ -52,4 +64,16 @@
 .topic {
   font-weight: bold;
   font-size: 1.1rem;
+}
+
+@media screen and (max-width: 996px) {
+  .moduleSidebarContainer {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .moduleSidebarContainer {
+    width: 70%;
+  }
 }

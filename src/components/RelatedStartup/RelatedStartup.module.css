@@ -16,6 +16,7 @@
 }
 
 .boldCaption {
+  width: 100%;
   font-weight: bold;
   font-size: 1.5rem;
 }
@@ -49,4 +50,14 @@
 
 .arrowRight {
   margin-left: 3em;
+}
+
+@media screen and (max-width: 425px) {
+  .boldCaption{
+    width: 6em;
+  }
+
+  .arrowRight {
+    margin-left: 1em;
+  }
 }

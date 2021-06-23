@@ -1,19 +1,19 @@
 .servicesContainer {
   width: 100%;
-  /* border: 1px solid red; */
+  max-width: 1240px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   margin: 5em 0;
   flex-wrap: wrap;
+
 }
 
 .img_1,
 .img_2,
 .img_3 {
-  width: 24em;
+  width: 24.5em;
   height: auto;
-  /* border: 1px solid red; */
   margin-bottom: 1em;
   display: flex;
   align-items: center;
@@ -35,6 +35,14 @@
   font-weight: bold;
   padding: 0.8em 2em;
   border-radius: 0.3em;
+}
+
+@media screen and (max-width: 996px) {
+  .img_1,
+  .img_2,
+  .img_3 {
+    width: 70%;
+  }
 }
 
 @media screen and (max-width: 768px) {

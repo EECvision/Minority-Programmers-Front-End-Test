@@ -1,0 +1,94 @@
+.wrapper {
+  background: #151371;
+  padding: 0 4em;
+  padding-top: 1em;
+  color: white;
+}
+
+.lessonContainer {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  background-image: linear-gradient(to right, rgb(255, 255, 255, 0.2), rgb(255, 255, 255,0.05));
+  border-top-right-radius: 1.5em;
+  border-top-left-radius: 1.5em;
+  padding: 3em;
+  border-left: 2px solid rgb(255, 255, 255, 0.3);
+  border-top: 2px solid rgb(255, 255, 255, 0.1);
+}
+
+.lessonContainer::after {
+  position: absolute;
+  content: " ";
+  width: 1px;
+  height: 50%;
+  background: rgb(255, 255, 255, 0.1);
+  right: 0;
+  top: 12em;
+  border-top-right-radius: 1em;
+  border-bottom-right-radius: 1em;
+}
+
+.progressContainer {
+  width: 100%;
+  text-align: end;
+}
+
+.progress {
+  display: inline-block;
+  padding: 1px 3em;
+  border-radius: 1em;
+  border: 1px solid red;
+}
+
+.title {
+  font-size: calc(1rem + 2vmax);
+  font-weight: bold;
+  margin-bottom: 1em;
+}
+
+.duration {
+  margin-bottom: 3em;
+}
+
+.textContainer {
+  margin-bottom: 4em;
+}
+
+.header {
+  margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .wrapper {
+    padding: 0 2em;
+  }
+  .lessonContainer {
+    padding: 1.5em;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .wrapper {
+    padding: 0 0.3em;
+  }
+  .lessonContainer {
+    padding: 1em 0.5em;
+    border-top-right-radius: 0.5em;
+    border-top-left-radius: 0.5em;  
+  }
+  .progress {
+    padding: 1px 1em;
+  }
+  .header,
+  .title {
+    font-size: 1.4rem;
+    font-weight: 500;
+  }
+  .textContainer {
+    margin-bottom: 2em;
+  }
+}

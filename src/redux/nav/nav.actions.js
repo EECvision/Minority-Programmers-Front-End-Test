@@ -1,7 +1,8 @@
 import navActionTypes from './nav.types';
 
-export const toggleNavbar = () => ({
+export const toggleNavbar = state => ({
   type: navActionTypes.TOGGLE_NAVBAR,
+  payload: state
 })
 
 export const setActiveLink = link => ({

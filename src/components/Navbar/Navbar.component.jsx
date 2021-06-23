@@ -9,7 +9,7 @@ import { setActiveLink, toggleNavbar } from '../../redux/nav/nav.actions';
 const Navbar = ({navbar, toggleNavbar, activeLink, setActiveLink}) => {
 
   const handleClick= key =>{
-    // toggleNavbar();
+    toggleNavbar(false);
     setActiveLink({[key]: true})
   }
 
@@ -44,7 +44,7 @@ const mapStateToProps = createStructuredSelector({
 })
 
 const mapDispatchToProps = dispatch => ({
-  toggleNavbar: ()=> dispatch(toggleNavbar()),
+  toggleNavbar: state => dispatch(toggleNavbar(state)),
   setActiveLink: key => dispatch(setActiveLink(key))
 })
 

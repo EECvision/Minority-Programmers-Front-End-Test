@@ -10,7 +10,7 @@ const navReducer = (state=INITIAL_STATE, action) => {
     case navActionTypes.TOGGLE_NAVBAR:
       return{
         ...state,
-        toggleNavbar: !state.toggleNavbar
+        toggleNavbar: action.payload
       }
     case navActionTypes.SET_ACTIVE_LINK:
       return{

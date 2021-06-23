@@ -15,7 +15,6 @@
 .previous {
   margin-left: -1em;
   margin-bottom: 1em;
-  font-size: calc(0.7rem + 1vmax);
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -23,15 +22,12 @@
 }
 
 .previous  i {
-  font-size: calc(0.7rem + 2vmax);
   font-weight: lighter;
   margin-right: 12px;
 }
 
 .courseTitle {
   margin-bottom: 2em;
-  font-size: calc(0.5rem + 2vmax);
-
 }
 
 .weekContainer {
@@ -39,7 +35,6 @@
 }
 
 .weekTitle {
-  font-size: calc(0.5rem + 2vmax);
   margin-bottom: 0.5em;
   color: white;
 }
@@ -60,14 +55,32 @@
   margin-right: 0.5em;
 }
 
+.weekTitle,
+.courseTitle,
+.previous,
+.previous i{
+  font-size: 1.2rem;
+}
+
 .topic {
-  /* font-weight: bold; */
   font-size: 1.1rem;
 }
 
 @media screen and (max-width: 996px) {
   .moduleSidebarContainer {
     display: none;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .weekTitle,
+  .courseTitle,
+  .previous,
+  .previous i{
+    font-size: 1.2rem;
+  }
+  .topic {
+    font-size: 0.9rem;
   }
 }
 

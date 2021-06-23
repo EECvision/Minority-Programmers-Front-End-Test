@@ -15,7 +15,7 @@
 .previous {
   margin-left: -1em;
   margin-bottom: 1em;
-  font-size: 1.5rem;
+  font-size: calc(0.7rem + 1vmax);
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -23,15 +23,15 @@
 }
 
 .previous  i {
-  font-size: 3.5rem;
+  font-size: calc(0.7rem + 2vmax);
   font-weight: lighter;
   margin-right: 12px;
 }
 
 .courseTitle {
-  font-size: 2rem;
-  font-weight: 500;
   margin-bottom: 2em;
+  font-size: calc(0.5rem + 2vmax);
+
 }
 
 .weekContainer {
@@ -39,8 +39,7 @@
 }
 
 .weekTitle {
-  font-size: 2rem;
-  font-weight: 500;
+  font-size: calc(0.5rem + 2vmax);
   margin-bottom: 0.5em;
   color: white;
 }
@@ -62,7 +61,7 @@
 }
 
 .topic {
-  font-weight: bold;
+  /* font-weight: bold; */
   font-size: 1.1rem;
 }
 

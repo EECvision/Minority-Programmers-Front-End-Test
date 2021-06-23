@@ -23,6 +23,6 @@ meter::-webkit-meter-optimum-value {
   height: 50px;
 }
 
-/* * {
+* {
   transition: all 0.2s;
-} */
+}

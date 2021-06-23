@@ -14,7 +14,7 @@ const rootReducer = combineReducers({
 const persistConfig = {
   key: 'root',
   storage,
-  whitelist: ['nav']
+  whitelist: ['nav', 'learn', 'startup']
 }
 
 export default persistReducer(persistConfig, rootReducer);

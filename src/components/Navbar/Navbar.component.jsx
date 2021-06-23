@@ -9,7 +9,7 @@ import { setActiveLink, toggleNavbar } from '../../redux/nav/nav.actions';
 const Navbar = ({navbar, toggleNavbar, activeLink, setActiveLink}) => {
 
   const handleClick= key =>{
-    toggleNavbar();
+    // toggleNavbar();
     setActiveLink({[key]: true})
   }
 

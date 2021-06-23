@@ -29,12 +29,14 @@
 
 .showNav {
   position: fixed;
-  top: 4em;
+  bottom: 1em;
+  right: 2em;
   display: none;
   border: 1px solid #151371;
   padding:  0.3em;
   border-radius: 0.3em;
   z-index: 5;
+  background: rgb(255, 0, 104, 0.4);
 }
 
 .showNav i {

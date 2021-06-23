@@ -15,9 +15,9 @@ const Navbar = ({navbar, toggleNavbar, activeLink, setActiveLink}) => {
 
   return (
     <header className={styles.navbarContainer}>
-      <div className={styles.logoContainer}>
+      <Link to="/home" className={styles.logoContainer}>
         <img className={styles.logo} src={Logo} alt="logo" />
-      </div>
+      </Link>
       <nav className={styles.links}>
         <Link to='/home' onClick={()=>handleClick("home")} style={{borderBottom: activeLink.home ? '2px solid #FF00B8' : 'transparent'}} className={styles.link}>Home</Link>
         <Link to='/startup' onClick={()=>handleClick("incubator")} style={{borderBottom: activeLink.incubator ? '2px solid #FF00B8' : 'transparent'}} className={styles.link}>Incubator</Link>

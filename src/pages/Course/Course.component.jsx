@@ -18,7 +18,7 @@ const Course = ({ course }) => {
 
   return (
     <div className={styles.courseContainer}>
-      <div style={show ? {right: '2em'} : {left: '1em'}} onClick={()=> set(!show)} className={styles.showNav}><i class="fas fa-exchange-alt"></i></div>
+      <div onClick={()=> set(!show)} className={styles.showNav}><i class="fas fa-exchange-alt"></i></div>
       <CourseModuleSidebar {...course} show={show} />
       <div className={styles.wrapper}>
         <UserDashboard />
